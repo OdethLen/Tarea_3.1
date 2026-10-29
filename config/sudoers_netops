@@ -1,0 +1,8 @@
+# /etc/sudoers.d/sudoers_netops
+# Regla de sudoers para administración del sistema
+
+# Usuario administrador con acceso total mediante sudo
+carlos.mendoza ALL=(ALL:ALL) ALL
+
+# (Opcional) Permisos limitados de red para el grupo netops
+%netops ALL=(ALL:ALL) /bin/systemctl restart networking, /bin/systemctl status networking
